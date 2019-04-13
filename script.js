@@ -859,8 +859,8 @@ const ticTac = () => {
             three.className === 'zero3' &&
             four.className === 'zero4') {
 
-            eight.textContent = 'X';
-            eight.classList.add('X');
+            six.textContent = 'X';
+            six.classList.add('X');
             p.textContent = 'Draw';
         }
     };
