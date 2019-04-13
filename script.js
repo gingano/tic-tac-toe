@@ -14,7 +14,7 @@ const ticTac = () => {
     let nine = document.getElementById('nine');
     let refresh = document.getElementById('button');
 
-   // alert('Hi, this is a tic-tac-toe game. You play for "O"');
+    alert('Hi, this is a tic-tac-toe game. You play for "O"');
 
 
     one.textContent = 'X';
