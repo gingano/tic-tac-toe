@@ -26,11 +26,15 @@ const ticTac = () => {
         let target = event.target;
         if (target.className === 'zero1') {
 
+        } else if (target.className === 'X') {
+
         } else {
             target.textContent = 'O';
         }
 
-        if(call === 1) {
+        if (target.className === 'X') {
+
+        } else if(call === 1) {
             target.classList.add('zero1');
             firstMove();
             call++;
