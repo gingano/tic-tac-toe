@@ -24,9 +24,7 @@ const ticTac = () => {
 
     let click = (event) => {
         let target = event.target;
-        if (target.className === 'zero1') {
-
-        } else if (target.className === 'X') {
+        if (target.className === 'X') {
 
         } else {
             target.textContent = 'O';
@@ -38,43 +36,55 @@ const ticTac = () => {
             target.classList.add('zero1');
             firstMove();
             call++;
-            return;
         } else if (call === 2) {
-            target.classList.add('zero2');
-            if (two.className === 'zero1') {
-                secondMove2();
+            if (target.className === 'zero1') {
+
+            } else {
+                target.classList.add('zero2');
+                if (two.className === 'zero1') {
+                    secondMove2();
+                }
+                if (three.className === 'zero1') {
+                    secondMove3();
+                }
+                if (four.className === 'zero1') {
+                    secondMove4();
+                }
+                if (five.className === 'zero1') {
+                    secondMove5();
+                }
+                if (six.className === 'zero1') {
+                    secondMove6();
+                }
+                if (seven.className === 'zero1') {
+                    secondMove7();
+                }
+                if (eight.className === 'zero1') {
+                    secondMove8();
+                }
+                if (nine.className === 'zero1') {
+                    secondMove9();
+                }
+                call++;
             }
-            if (three.className === 'zero1') {
-                secondMove3();
-            }
-            if (four.className === 'zero1') {
-                secondMove4();
-            }
-            if (five.className === 'zero1') {
-                secondMove5();
-            }
-            if (six.className === 'zero1') {
-                secondMove6();
-            }
-            if (seven.className === 'zero1') {
-                secondMove7();
-            }
-            if (eight.className === 'zero1') {
-                secondMove8();
-            }
-            if (nine.className === 'zero1') {
-                secondMove9();
-            }
-            call++;
-            return;
         } else if (call === 3) {
-            target.classList.add('zero3');
-            thirdMove();
-            call++;
-            return;
+            if (target.className === 'zero1' ||
+                target.className === 'zero2') {
+                
+            } else {
+                target.classList.add('zero3');
+                thirdMove();
+                call++;
+            }
         } else if (call === 4) {
-            target.classList.add('zero4');
-            fourthMove();
+            if (target.className === 'zero1' ||
+                target.className === 'zero2' ||
+                target.className === 'zero3'){
+                call--;
+            } else {
+                target.classList.add('zero4');
+                fourthMove();
+            }
         }
     };
     field.addEventListener('click', click);
