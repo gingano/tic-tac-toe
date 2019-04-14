@@ -159,6 +159,10 @@ const ticTac = () => {
             five.textContent = 'X';
             five.classList.add('X');
             p.textContent = 'Unfortunately, you lost :(';;
+        } else if (eight.className === 'zero2') {
+            five.textContent = 'X';
+            five.classList.add('X');
+            p.textContent = 'Unfortunately, you lost :(';
         } else if (nine.className === 'zero2') {
             five.textContent = 'X';
             five.classList.add('X');
@@ -258,11 +262,13 @@ const ticTac = () => {
     };
     let secondMove6 = () => {
         if (two.className === 'zero2') {
-            seven.textContent = 'X';
-            seven.classList.add('X')
+            five.textContent = 'X';
+            five.classList.add('X');
+            p.textContent = 'Unfortunately, you lost :(';
         } else if (three.className === 'zero2') {
-            seven.textContent = 'X';
-            seven.classList.add('X');
+            five.textContent = 'X';
+            five.classList.add('X');
+            p.textContent = 'Unfortunately, you lost :(';
         } else if (four.className === 'zero2') {
             five.textContent = 'X';
             five.classList.add('X');
