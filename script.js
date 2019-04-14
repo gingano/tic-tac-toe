@@ -866,6 +866,24 @@ const ticTac = () => {
             six.classList.add('X');
             p.textContent = 'Draw';
         }
+        if (five.className === 'zero1' &&
+            two.className === 'zero2' &&
+            seven.className === 'zero3' &&
+            four.className === 'zero4') {
+
+            six.textContent = 'X';
+            six.classList.add('X');
+            p.textContent = 'Unfortunately, you lost :(';
+        }
+        if (five.className === 'zero1' &&
+            two.className === 'zero2' &&
+            seven.className === 'zero3' &&
+            six.className === 'zero4') {
+
+            four.textContent = 'X';
+            four.classList.add('X');
+            p.textContent = 'Draw';
+        }
         if (six.className === 'zero1' &&
             five.className === 'zero2' &&
             seven.className === 'zero3' &&
