@@ -70,7 +70,7 @@ const ticTac = () => {
         } else if (call === 3) {
             if (target.className === 'zero1' ||
                 target.className === 'zero2') {
-                
+
             } else {
                 target.classList.add('zero3');
                 thirdMove();
