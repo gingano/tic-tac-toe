@@ -80,7 +80,7 @@ const ticTac = () => {
             if (target.className === 'zero1' ||
                 target.className === 'zero2' ||
                 target.className === 'zero3'){
-                call--;
+                
             } else {
                 target.classList.add('zero4');
                 fourthMove();
