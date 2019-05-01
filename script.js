@@ -84,6 +84,7 @@ const ticTac = () => {
             } else {
                 target.classList.add('zero4');
                 fourthMove();
+                call++;
             }
         }
     };
