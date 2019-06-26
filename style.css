@@ -1,0 +1,70 @@
+#status {
+    text-align: center;
+    font-size: 50px;
+}
+
+.field{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 95px;
+    font-family: Arial, sans-serif;
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+}
+.field * {
+    position: absolute;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+#two {
+    margin-left: 100px;
+}
+
+#three {
+    margin-left: 200px;
+}
+
+#four {
+    margin-top: 100px;
+}
+
+#five {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+#six {
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+#seven {
+    margin-top: 200px;
+}
+
+#eight {
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+#nine {
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+.button{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#button {
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 100px;
+}
